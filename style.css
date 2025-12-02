@@ -236,3 +236,28 @@ body {
     font-size: 1.3rem;
   }
 }
+
+/* About page styles (used by about.html) */
+:root{
+  --color-about: #fff7ed; /* warm cream */
+  --color-education: #e8f7ff; /* soft blue */
+  --color-hobbies: #f0fdf4; /* mint */
+}
+
+.section{padding:40px;border-radius:8px;margin-bottom:18px}
+#about{background:var(--color-about)}
+#education{background:var(--color-education)}
+#hobbies{background:var(--color-hobbies)}
+
+h2{margin-bottom:12px;font-size:1.4rem}
+p{color:var(--text-muted);margin-bottom:8px}
+
+.section + hr{border:0;height:6px;display:block;border-radius:6px;margin:12px 0;width:60%;margin-left:0}
+hr.rule-1{background:#ffd59e}
+hr.rule-2{background:#9fd8ff}
+hr.rule-3{background:#bff4d6;width:50%}
+
+@media (max-width:520px){
+  .section{padding:26px}
+  .container{padding:0 14px}
+}
