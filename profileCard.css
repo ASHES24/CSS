@@ -1,0 +1,51 @@
+/* File: style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-card {
+    position: relative; /* Required for absolute badge */
+    width: 280px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-photo {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.username {
+    margin: 10px 0 5px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Badge Positioned at Top-Right */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
