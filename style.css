@@ -261,3 +261,49 @@ hr.rule-3{background:#bff4d6;width:50%}
   .section{padding:26px}
   .container{padding:0 14px}
 }
+
+/* Navigation bar styles (nav.html) */
+.site-nav{
+  background: linear-gradient(90deg,#0b6cf0 0%, #3b82f6 100%);
+  display:block;
+  width:100%;
+  box-shadow:0 4px 14px rgba(11,108,240,0.18);
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 20px}
+.nav-list{list-style:none;display:flex;gap:22px;align-items:center;height:64px;margin:0}
+.nav-item{display:inline-block}
+.nav-item a{
+  display:inline-block;
+  padding:12px 16px;
+  color:#ffffff;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  font-size:1rem;
+  transition:background .18s ease,color .18s ease,transform .12s ease;
+}
+.nav-item a:hover{
+  background:rgba(255,255,255,0.12);
+  transform:translateY(-2px);
+}
+.nav-item a:active{transform:translateY(0)}
+
+/* active/current state */
+.nav-item a[aria-current="page"], .nav-item a.active{
+  background:#ffffff;
+  color:#0b6cf0;
+  box-shadow:0 6px 18px rgba(11,108,240,0.14);
+}
+
+/* focus for keyboard users */
+.nav-item a:focus{outline:3px solid rgba(255,255,255,0.18);outline-offset:3px;border-radius:6px}
+
+/* spacing to ensure nav stays usable on small screens */
+@media (max-width:640px){
+  .nav-list{gap:12px;height:56px;padding:0 8px;overflow:auto}
+  .nav-item a{padding:8px 10px;font-size:.95rem}
+}
+
