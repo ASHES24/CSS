@@ -1,0 +1,38 @@
+/* File: style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+/* Sticky Header */
+.site-header {
+    position: sticky;
+    top: 0;
+    background-color: #1a73e8;
+    color: white;
+    padding: 15px;
+    border-bottom: 3px solid #0b4fa1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    margin-top: 20px;  /* Prevents overlap under sticky header */
+    padding: 20px;
+}
