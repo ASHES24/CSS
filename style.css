@@ -1,0 +1,238 @@
+/* Styled Student Profile Page - style.css */
+
+:root {
+  --primary-color: #0b6cf0;
+  --secondary-color: #f3f6f9;
+  --text-dark: #1f2937;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #6f9cff 100%);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(11, 108, 240, 0.15);
+}
+
+.header h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 700; }
+.header .tagline { font-size: 1.1rem; opacity: 0.95; font-weight: 300; }
+
+.profile-box { background-color: white; border: 2px solid var(--border-color); border-radius: 10px; padding: 40px; margin: 30px auto; max-width: 700px; display: flex; gap: 30px; align-items: flex-start; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); }
+
+.profile-image { flex-shrink: 0; }
+.profile-image img { width: 180px; height: 180px; border-radius: 15px; border: 3px solid var(--primary-color); object-fit: cover; box-shadow: 0 4px 15px rgba(11, 108, 240, 0.2); }
+
+.profile-info { flex: 1; }
+.profile-info h2 { font-size: 1.8rem; margin-bottom: 15px; color: var(--text-dark); }
+.profile-info .meta { font-size: 1rem; margin: 10px 0; color: var(--text-muted); padding: 8px 0; }
+.profile-info .meta strong { color: var(--text-dark); }
+.profile-info .bio { font-size: 0.95rem; line-height: 1.7; margin-top: 20px; color: var(--text-dark); text-align: justify; }
+
+.footer { background-color: #1f2937; color: white; text-align: center; padding: 30px 0; margin-top: 50px; }
+.footer p { font-size: 0.95rem; opacity: 0.9; }
+
+@media (max-width: 768px) {
+  .profile-box { flex-direction: column; align-items: center; text-align: center; padding: 30px 20px; gap: 20px; }
+  .profile-image img { width: 150px; height: 150px; }
+  .profile-info .bio { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .header h1 { font-size: 1.5rem; }
+  .header .tagline { font-size: 0.95rem; }
+  .profile-box { padding: 20px 15px; }
+  .profile-image img { width: 120px; height: 120px; }
+  .profile-info h2 { font-size: 1.3rem; }
+}
+/* Styled Student Profile Page - style.css */
+
+:root {
+  --primary-color: #0b6cf0;
+  --secondary-color: #f3f6f9;
+  --text-dark: #1f2937;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styling */
+.header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #6f9cff 100%);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(11, 108, 240, 0.15);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.header .tagline {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* Profile Box - Box Model Applied */
+.profile-box {
+  background-color: white;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 700px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Profile Image - Border Radius */
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+  border: 3px solid var(--primary-color);
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(11, 108, 240, 0.2);
+}
+
+/* Profile Info */
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.profile-info .meta {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: var(--text-muted);
+  padding: 8px 0;
+}
+
+.profile-info .meta strong {
+  color: var(--text-dark);
+}
+
+.profile-info .bio {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-top: 20px;
+  color: var(--text-dark);
+  text-align: justify;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.footer p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .profile-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-info .bio {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header .tagline {
+    font-size: 0.95rem;
+  }
+
+  .profile-box {
+    padding: 20px 15px;
+  }
+
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-info h2 {
+    font-size: 1.3rem;
+  }
+}
